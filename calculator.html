@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Simple Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			background-color: #ffffff;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.main {
+			background-color: #000000;
+			width: 226px;
+			opacity: .7;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			border-radius: 5px;
+		}
+
+		button {
+			width: 50px;
+			height: 50px;
+			font-size: 25px;
+			margin: 2px;
+			text-decoration-color: white;
+			background-color: rgb(68, 95, 247);
+			border-radius: 5px;
+			border: thin;
+			cursor: pointer;
+
+		}
+
+		.textview {
+			width: 207px;
+			margin: 4px;
+			font-size: 25px;
+			background-color: rgb(236, 231, 231);
+		}
+
+		button:hover {
+			background-color: rgb(68, 140, 247);
+		}
+
+		.rowspan {
+			height: 106px;
+		}
+
+		.colspan {
+			width: 106px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="main">
+		<input class="textview" placeholder="0">
+		<table>
+			<tr>
+				<td>
+					<button value="clean">C</button>
+				</td>
+				<td>
+					<button value="back">?</button>
+				</td>
+				<td>
+					<button value="/">/</button>
+				</td>
+				<td>
+					<button value="*">X</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<button value="1">1</button>
+				</td>
+				<td>
+					<button value="2">2</button>
+				</td>
+				<td>
+					<button value="3">3</button>
+				</td>
+				<td>
+					<button value="-">-</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<button value="4">4</button>
+				</td>
+				<td>
+					<button value="5">5</button>
+				</td>
+				<td>
+					<button value="6">6</button>
+				</td>
+				<td>
+					<button value="+">+</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<button value="7">7</button>
+				</td>
+				<td>
+					<button value="8">8</button>
+				</td>
+				<td>
+					<button value="9">9</button>
+				</td>
+				<td rowspan="2">
+					<button class="rowspan" value="=">=</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2"><button class="colspan" value="0">0</button></td>
+				<td><button value=".">.</button></td>
+			</tr>
+
+		</table>
+	</div>
+	<script>
+		const startApp = () => {
+			getCalculation();
+		}
+		const view = document.querySelector('.textview');
+
+		const insert = ({target}) => {
+let target={}
+		};
+
+		const equal = () => { };
+
+		const clean = () => { };
+
+		const back = () => { };
+
+		const getCalculation = () => {
+			view.addEventListener('click', () => {
+			});
+		};
+
+		startApp();
+	</script>
+</body>
+
+</html>
